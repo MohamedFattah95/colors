@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?bgColor"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/_24sdp"
+        android:text="@string/app_language"
+        android:textColor="?headlineTextColor" />
+
+    <ImageView
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_24sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_logo2"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_lang"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:gravity="center"
+        android:text="@string/select_language_ar"
+        android:textColor="?headlineTextColor"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-8dp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:gravity="center"
+        android:text="@string/select_language_en"
+        android:textColor="?headlineTextColor"
+        android:textSize="@dimen/_14ssp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardBackgroundColor="?cardBg"
+        app:contentPadding="@dimen/_8sdp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rb_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:buttonTint="?textColor"
+                android:text="@string/english"
+                android:textColor="?textColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:background="?bgColor" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rb_arabic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:buttonTint="?textColor"
+                android:text="@string/arabic"
+                android:textColor="?textColor" />
+
+        </RadioGroup>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

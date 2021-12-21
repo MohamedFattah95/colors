@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fci.colors_app">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <application
+        android:name="com.fci.colors_app.BaseApp"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute">
+
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.splash.SplashActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.user.login.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.terms.TermsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.main.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.intro.IntroActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.select_language.SelectLanguageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.delivery_from.DeliveryFromActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.fci.colors_app.ui.chat.ChatActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.fci.colors_app.ui.web_view.WebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.chat.ChatAdminActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key" />
+
+
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.user.complete_profile.CompleteProfileActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.user.register.RegisterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.user.verify_account.VerifyAccountActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.privacy_policy.PrivacyPolicyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.faqs.FAQsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.complaints_and_suggestions.ComplaintsAndSuggestionsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.order_details.OrderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.commission.CommissionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.common.FullImageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.order_delivery_location.OrderLocationsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.user.forgot_password.ForgotPasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.user.reset_password.ResetPasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.about.AboutActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="locale"
+            android:name="com.fci.colors_app.ui.error_handler.ErrorHandlerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

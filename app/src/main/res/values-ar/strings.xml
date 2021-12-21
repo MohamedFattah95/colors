@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ألوان</string>
+
+    <!--Toolbar menus-->
+    <string name="share">مشاركة</string>
+
+    <!--Drawer-->
+
+    <!--Drawer Menus-->
+    <string name="logout_menu">تسجيل خروج</string>
+    <string name="login_drawer">تسجيل الدخول</string>
+    <string name="home_menu">الرئيسية</string>
+    <string name="profile_menu">الملف الشخصي</string>
+    <string name="callcenter_menu">خدمة العملاء</string>
+    <string name="telegram_menu">دعم تليجرام</string>
+    <string name="settings_menu">الإعدادات</string>
+
+    <!--App Message-->
+    <string name="some_error">حدث خطأ ما!</string>
+
+    <!--Login-->
+    <string name="login">تسجيل دخول</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+
+    <!--Login Validation-->
+
+    <!--about fragment-->
+    <string name="version">رقم الإصدار</string>
+
+    <!--rating dialog-->
+    <string name="rate_us">تقييم التطبيق</string>
+    <string name="rating_message">الرجاء إخبارنا كيف نقوم بتحسين أنفسنا</string>
+
+    <!--play store-->
+
+    <!--button-->
+    <string name="later">لاحقاً</string>
+    <string name="submit">تأكيد</string>
+
+    <!--feed-->
+    <string name="title">منشوراتي</string>
+
+    <!--empty state-->
+    <string name="km_text">كم</string>
+
+
+    <string name="skip">تخطي</string>
+    <string name="mobile_number">رقم الجوال</string>
+    <string name="create_new_account">إنشاء حساب جديد</string>
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="restore_password"><u>استعادة كلمة المرور</u></string>
+    <string name="chat_text">محادثة</string>
+    <string name="save">حفظ</string>
+    <string name="open_gps">يرجى تفعيل الـ GPS</string>
+    <string name="delivery_place">مكان التوصيل</string>
+    <string name="no_address_found">لم يتم العثور على عنوان</string>
+    <string name="invalid_region">منطقة غير مدعومة</string>
+    <string name="next">التالي</string>
+    <string name="addition_order">طلب إضافي من متجر على الطريق</string>
+    <string name="order_details">تفاصيل الطلب</string>
+    <string name="accept">موافق</string>
+    <string name="delivered">تم\nالتوصيل</string>
+    <string name="delivering">جاري\nالتوصيل</string>
+    <string name="order_place">موقع الطلب</string>
+    <string name="order_des">مكان التوصيل</string>
+    <string name="orders_txt">الطلبات</string>
+    <string name="orders_num_txt">عدد الطلبات</string>
+    <string name="notes_txt">التعليق والملاحظات</string>
+    <string name="pay_txt">طريقة الدفع</string>
+    <string name="pay_note">سيتم تحديدها فور إصدار فاتورة الشراء للعميل</string>
+
+    <string name="i_accept_terms_and_conditions"><u>أوافق على الشروط والأحكام</u></string>
+    <string name="have_an_account">لديك حساب بالفعل؟</string>
+    <string name="sign_up">تسجيل</string>
+    <string name="sign_in"><u>تسجيل الدخول</u></string>
+    <string name="verify_account">تفعيل الحساب</string>
+    <string name="please_enter_verification_code">فضلاً قم بإدخال كود التفعيل</string>
+    <string name="enter_verification_code_sent_you_at">أدخل رمز التحقق المرسل إليكم على هاتفكم</string>
+    <string name="code_not_received">لم يصلك الكود؟</string>
+    <string name="resend"><u>إعادة الإرسال</u></string>
+    <string name="complete_your_profile_information">استكمل بيانات حسابك الشخصي</string>
+    <string name="press_to_upload_a_profile_picture">اضغط لرفع صورة شخصية</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="gender">النوع</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثى</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="terms">الشروط والأحكام</string>
+    <string name="about_captain_saudi">عن يلا قو</string>
+    <string name="faqs">الأسئلة الشائعة</string>
+    <string name="complaints_and_suggestions">الشكاوى والمقترحات</string>
+    <string name="how_it_works">استخدام التطبيق</string>
+    <string name="share_app">شارك التطبيق</string>
+    <string name="slide_to_cancel">إسحب للإلغاء</string>
+    <string name="write_ur_msg">اكتب رسالتك</string>
+    <string name="send_pack_txt">إرسال غرض</string>
+    <string name="receive_pack_txt">إستلام غرض</string>
+    <string name="message_type">نوع الرسالة</string>
+    <string name="message_title">عنوان الرسالة</string>
+    <string name="message_text">نص الرسالة</string>
+    <string name="please_write_message_text">فضلاً قم بكتابة نص الرسالة</string>
+    <string name="send">إرسال</string>
+    <string name="sar">ريال</string>
+    <string name="order_number">رقم الطلب</string>
+    <string name="order_date">تاريخ الطلب</string>
+    <string name="order_type">نوع الطلب</string>
+    <string name="purchase_invoice">فاتورة الشراء</string>
+    <string name="order_price">سعر الطلب</string>
+    <string name="it_will_be_determined_later">سيتم تحديده لاحقاً</string>
+    <string name="delivery_price">سعر التوصيل</string>
+    <string name="discount">الخصم</string>
+    <string name="total">الإجمالي</string>
+    <string name="cash">الدفع نقداً</string>
+    <string name="wallet">المحفظة</string>
+    <string name="e_payment">دفع إلكتروني</string>
+    <string name="payment_was_successful">تم الدفع بنجاح</string>
+    <string name="id_number">رقم الهوية</string>
+    <string name="license_image">صورة الرخصة</string>
+    <string name="id_card_residence">بطاقة الأحوال - الإقامة</string>
+    <string name="client_info">بيانات العميل</string>
+    <string name="take_invoice_picture">قم بتصوير فاتورة شراء الطلبات</string>
+    <string name="rate_the_client">قم بتقييم العميل</string>
+    <string name="executed_orders">الطلبات المنفذة</string>
+    <string name="order_s">طلب/طلبات</string>
+    <string name="total_amount_of_delivery">إجمالي مبلغ التوصيل</string>
+    <string name="your_balance_now">رصيدك الآن</string>
+    <string name="commission_transfer_form">نموذج تحويل العمولة</string>
+    <string name="telephone_menu">الرقم الموحد</string>
+    <string name="notifs_menu">الإشعارات</string>
+    <string name="change_status">حالة الحساب</string>
+    <string name="app_services">خدمات التطبيق</string>
+    <string name="app_services_note">يمكنك تفعيل الخدمة التي تريد إستقبال طلبات منها</string>
+    <string name="thanks_accept">نشكرك على الموافقة على الطلب</string>
+    <string name="thanks_buy">نشكرك لشراء الطلب</string>
+    <string name="delivery_price_add">فضلاً قم بتحديد سعر التوصيل المناسب</string>
+    <string name="order_cost">فضلاً قم بتحديد تكلفة الطلب</string>
+    <string name="app_commission">دفع العمولة</string>
+    <string name="comm_intro">يمكنكم إستخدام التحويل البنكي لدفع العمولة عن طريق إرسال حوالة إلى حسابتنا التالية</string>
+    <string name="accout_name">إسم صاحب الحساب</string>
+    <string name="bank_name">إسم البنك</string>
+    <string name="account_number">رقم الحساب</string>
+    <string name="account_number_international">رقم الحساب الدولي</string>
+    <string name="comm_after">بعد إرسال المبلغ يجب مراسلتنا عبر النموذج التالي لتسجيل العمولة بإسم عضويتك</string>
+    <string name="app_commission_form">نموذج تحويل العمولة</string>
+    <string name="comm_amount">مبلغ العمولة</string>
+    <string name="comm_bank">البنك الذي تم التحويل إليه</string>
+    <string name="comm_time">متى تم التحويل</string>
+    <string name="comm_name">إسم المحول</string>
+    <string name="notes">ملاحظات</string>
+    <string name="the_balance">الرصيد</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="empty_mobile">رقم الجوال فارغ</string>
+    <string name="empty_password">كلمة المرور فارغة</string>
+    <string name="invalid_password">كلمة المرور يجب أن تتكون من 6 إلى 12 حرف</string>
+    <string name="accept_terms_to_continue">الرجاء الموافقة على الشروط والأحكام للاستمرار</string>
+    <string name="empty_code">رمز التفعيل فارغ</string>
+    <string name="after">بعد</string>
+    <string name="seconds">ث</string>
+    <string name="congratulations">تهانينا</string>
+    <string name="your_account_successfully_activated">تم تفعيل حسابك بنجاح</string>
+    <string name="please_complete_your_profile_information">فضلاً، استكمل بيانات حسابك الشخصي</string>
+    <string name="ok">حسناً</string>
+    <string name="empty_full_name">الإسم فارغ</string>
+    <string name="invalid_email">البريد الإلكتروني غير صحيح</string>
+    <string name="empty_msg_title">عنوان الرسالة فارغ</string>
+    <string name="empty_msg_text">نص الرسالة فارغ</string>
+    <string name="phone_entry">أدخل رقم جوالك</string>
+    <string name="phone_entry_info">فضلاً أدخل رقم جوالك المسجل لدينا</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="enter_the_new_password">أدخل كلمة المرور الجديدة</string>
+    <string name="please_enter_the_new_password">فضلاً أدخل كلمة المرور الجديدة</string>
+    <string name="passwords_not_matched">كلمتا المرور غير متطابقتين</string>
+    <string name="select_gender">اختر النوع</string>
+    <string name="am_text">ص</string>
+    <string name="pm_text">م</string>
+    <string name="all">الكل</string>
+    <string name="toggle_language"><u>English</u></string>
+    <string name="back">رجوع</string>
+    <string name="license_image_is_required">صورة الرخصة مطلوبة</string>
+    <string name="iqama_image_is_required">صورة بطاقة الأحول - الإقامة مطلوبة</string>
+    <string name="select_area">اختر المنطقة</string>
+    <string name="select_city">اختر المدينة</string>
+    <string name="empty_id_number">رقم الهوية فارغ</string>
+    <string name="go_to_login">إذهب لتسجيل الدخول</string>
+    <string name="login_warning">للإستمرار يرجى تسجيل الدخول</string>
+    <string name="acc_active">حسابك مفعل</string>
+    <string name="acc_ready">حسابك جاهز لإستقبال الطلبات</string>
+    <string name="services_enabled">تم تفعيل خدماتك</string>
+    <string name="services_disabled">تم إيقاف خدماتك</string>
+    <string name="filter_orders">فرز الطلبات</string>
+    <string name="waiting_orders">قيد الإنتظار</string>
+    <string name="delivery_orders">قيد التوصيل</string>
+    <string name="done_orders">تم التوصيل</string>
+    <string name="canceled_orders">تم الإلغاء</string>
+    <string name="canceled">تم الإلغاء</string>
+    <string name="recording">جاري التسجيل</string>
+    <string name="sending_offer">إرسال\nالعرض</string>
+    <string name="accepted">تمت\nالموافقة</string>
+    <string name="please_rate_the_client">فضلاً قم بتقييم العميل</string>
+    <string name="write_msg_to_app_management">اكتب رسالة لإدارة التطبيق (اختياري)</string>
+    <string name="mobile_number_hint">رقم الجوال (05)</string>
+    <string name="available_or_not">متواجد/غير متواجد</string>
+    <string name="invalid_id_number">يجب أن يكون رقم الهوية مكون من 10 أرقام</string>
+    <string name="choose_area">اختر المنطقة</string>
+    <string name="choose_city">اختر المدينة</string>
+    <string name="open_main_switch">يرجى تفعيل الحالة من القائمة الجانبية</string>
+    <string name="not_my_order">هذا الطلب لم يعد ينتمي إليك</string>
+    <string name="complete_your_profile_to_continue">يرجى استكمال بيانات حسابك الشخصي للاستمرار</string>
+    <string name="chat_text_admin">محادثة مع الإدارة</string>
+    <string name="link_not_available">الرابط غير متوفر حاليا</string>
+    <string name="_0_sar">0 ريال</string>
+    <string name="error_empty_amount">مبلغ العمولة فارغ</string>
+    <string name="error_empty_bankName">اسم البنك فارغ</string>
+    <string name="error_empty_date">تاريخ التحويل فارغ</string>
+    <string name="error_empty_username">اسم المحول فارغ</string>
+    <string name="error_empty_billImage">اختر صورة فاتورة العمولة</string>
+    <string name="done_comm">تم</string>
+    <string name="msg_comm">تم إرسال نموذج تحويل العمولة وتسجيله بعضويتك بنجاح</string>
+    <string name="cancel_offer">إلغاء العرض</string>
+    <string name="additional_service_price">سعر الخدمة الإضافية</string>
+    <string name="comm_app">عمولة التطبيق</string>
+    <string name="delivery_amount_after_discount">مبلغ التوصيل بعد الخصم</string>
+    <string name="total_discounts_amount">مبالغ الخصومات</string>
+    <string name="deserved_for_you">مستحقات لك</string>
+    <string name="deserved_for_app">مستحقات لـ يلا جو</string>
+    <string name="invalid_mobile_prefix">رقم الجوال يجب أن يبدأ بـ 05</string>
+    <string name="payment_is_not_selected">لم يقم العميل بتحديد طريقة الدفع</string>
+    <string name="invalid_telegram_link">رابط تليجرام غير صحيح</string>
+    <string name="check_internet_conn">تأكد من إتصالك بالأنترنت!</string>
+    <string name="weak_internet_conn">إتصالك بالأنترنت ضعيف، يرجي المحاولة في وقت لاحق!</string>
+    <string name="login_again">يرجى إعادة تسجيل الدخول</string>
+    <string name="login_to_continue">يرجى إعادة تسجيل الدخول للمتابعة</string>
+    <string name="charge_remaining_amount">اشحن المبلغ المتبقي لمحفظة العميل</string>
+    <string name="enter_remaining_amount">ادخل المبلغ المتبقي</string>
+    <string name="enter_valid_value">أدخل قيمة صحيحة</string>
+    <string name="minimum_shipping_is">أقل سعر توصيل</string>
+    <string name="deleted">محذوف</string>
+    <string name="n_a">لا يوجد</string>
+    <string name="your_account_deleted">تم حذف حسابك .. برجاء التواصل مع الإدارة</string>
+    <string name="not_authorized">غير مصرح به</string>
+    <string name="location_is_required">إذن الموقع مطلوب</string>
+    <string name="go_to_app_settings">إذهب إلى إعدادات التطبيق</string>
+    <string name="mic_is_required">إذن الميكروفون مطلوب</string>
+    <string name="waiting">قيد\nالانتظار</string>
+    <string name="delivering1">جاري التوصيل</string>
+    <string name="delivered1">تم التوصيل</string>
+    <string name="you">أنت</string>
+    <string name="admin">الإدارة</string>
+    <string name="update_available">تحديث متاح</string>
+    <string name="check_out_latest_version">تحقق من أحدث إصدار متوفر من يلا جو!</string>
+    <string name="update_not_available">التحديث غير متوفر</string>
+    <string name="update_not_available_description">لا يوجد تحديث متاح. تحقق من وجود تحديثات مرة أخرى في وقت لاحق!</string>
+    <string name="update">تحديث</string>
+    <string name="not_interested">غير مهتم</string>
+    <string name="check_for_updates">التحقق من وجود تحديثات</string>
+    <string name="for_android">للاندرويد</string>
+    <string name="for_ios">للايفون</string>
+    <string name="share_via">مشاركة عبر</string>
+    <string name="website">الموقع الإلكتروني</string>
+    <string name="address">العنوان</string>
+    <string name="store_approval">موافقة\nالمتجر</string>
+    <string name="night_mode">الوضع الليلي</string>
+    <string name="youtube">يوتيوب</string>
+    <string name="twitter">تويتر</string>
+    <string name="snap_chat">سناب شات</string>
+    <string name="instagram">انستقرام</string>
+    <string name="facebook">فيسبوك</string>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/home_menu" />
+        <item
+            android:id="@+id/navProfile"
+            android:icon="@drawable/ic_menu_user"
+            android:title="@string/profile_menu" />
+        <item
+            android:id="@+id/navOrders"
+            android:icon="@drawable/ic_menu_packing"
+            android:title="@string/orders_txt" />
+        <item
+            android:id="@+id/navNotifications"
+            android:icon="@drawable/ic_alarm_colored"
+            android:title="@string/notifs_menu" />
+        <item
+            android:id="@+id/navBalance"
+            android:icon="@drawable/ic_menu_wallet"
+            android:title="@string/the_balance" />
+        <item
+            android:id="@+id/navCallCenter"
+            android:icon="@drawable/ic_headphones"
+            android:title="@string/callcenter_menu" />
+        <item
+            android:id="@+id/navTelegram"
+            android:icon="@drawable/ic_menu_telegram"
+            android:title="@string/telegram_menu" />
+        <item
+            android:id="@+id/navNumber"
+            android:icon="@drawable/ic_menu_telephone"
+            android:title="@string/telephone_menu" />
+        <item
+            android:id="@+id/navSettings"
+            android:icon="@drawable/ic_menu_sett"
+            android:title="@string/settings_menu" />
+        <item
+            android:id="@+id/navLogout"
+            android:icon="@drawable/ic_menu_on_off"
+            android:title="@string/logout_menu" />
+    </group>
+
+</menu>
+

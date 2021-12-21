@@ -1,0 +1,276 @@
+<resources>
+    <string name="app_name">Colors</string>
+    <string name="google_map_api_key" translatable="false">AIzaSyDs-H_6605rGjWf8NVBOuSf_y4xyq8NrBY</string>
+    <!--Toolbar menus-->
+    <string name="share">Share</string>
+
+    <!--Drawer-->
+
+    <!--Drawer Menus-->
+    <string name="logout_menu">Logout</string>
+
+    <!--App Message-->
+    <string name="some_error">Some Error Occurred!</string>
+
+    <!--Login-->
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!--Login Validation-->
+
+    <!--about fragment-->
+    <string name="version">App version</string>
+
+    <!--rating dialog-->
+    <string name="rate_us">Rate us</string>
+    <string name="rating_message">Please let us know, how can we improve ourselves?</string>
+
+    <!--play store-->
+    <string name="app_google_play_store_link" translatable="false">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link" translatable="false">"market://details?id="</string>
+
+    <!--button-->
+    <string name="later">Later</string>
+    <string name="submit">Submit</string>
+
+    <!--feed-->
+    <string name="title">My Feed</string>
+
+    <!--empty state-->
+
+    <string name="login_drawer">Login</string>
+    <string name="home_menu">Home</string>
+    <string name="profile_menu">Profile</string>
+    <string name="callcenter_menu">Customer Service</string>
+    <string name="telegram_menu">Telegram</string>
+    <string name="settings_menu">Settings</string>
+    <string name="km_text">KM</string>
+    <string name="app_language" translatable="false">App language | لغة التطبيق</string>
+    <string name="english" translatable="false">English</string>
+    <string name="arabic" translatable="false">العربية</string>
+    <string name="select_language_ar" translatable="false">اختر اللغة</string>
+    <string name="select_language_en" translatable="false">Select Language</string>
+    <string name="skip">Skip</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="restore_password"><u>Restore Password</u></string>
+
+    <string name="chat_text">Chat</string>
+    <string name="save">Save</string>
+    <string name="open_gps">Please activate GPS</string>
+    <string name="delivery_place">Delivery place</string>
+    <string name="no_address_found">No address found</string>
+    <string name="invalid_region">Invalid region</string>
+    <string name="next">Next</string>
+    <string name="addition_order">Extra order on the run</string>
+    <string name="order_details">Order Details</string>
+    <string name="accept">Accept</string>
+    <string name="delivered">Delivered</string>
+    <string name="delivering">Delivering</string>
+    <string name="order_place">Order Place</string>
+    <string name="order_des">Delivery Place</string>
+    <string name="orders_txt">Orders</string>
+    <string name="orders_num_txt">Orders count</string>
+    <string name="notes_txt">Notes</string>
+    <string name="pay_txt">Payment method</string>
+    <string name="pay_note">It will be determined as soon as the purchase invoice is issued to the client</string>
+    <string name="i_accept_terms_and_conditions"><u>I accept terms and conditions</u></string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in"><u>Sign In</u></string>
+    <string name="verify_account">Verify Account</string>
+    <string name="please_enter_verification_code">Please enter verification code</string>
+    <string name="enter_verification_code_sent_you_at">Enter verification code sent you at</string>
+    <string name="code_not_received">Code not received?</string>
+    <string name="resend"><u>Resend</u></string>
+    <string name="complete_your_profile_information">Complete your profile information</string>
+    <string name="press_to_upload_a_profile_picture">Press to upload a profile picture</string>
+    <string name="full_name">Full name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="terms">Terms and conditions</string>
+    <string name="about_captain_saudi">About Yalla Go</string>
+    <string name="faqs">FAQs</string>
+    <string name="complaints_and_suggestions">Complaints and suggestions</string>
+    <string name="how_it_works">How it works</string>
+    <string name="share_app">Share App</string>
+    <string name="message_type">Message type</string>
+    <string name="message_title">Message title</string>
+    <string name="message_text">Message text</string>
+    <string name="please_write_message_text">Please write message text</string>
+    <string name="send">Send</string>
+    <string name="sar">SAR</string>
+    <string name="order_number">Order number</string>
+    <string name="order_date">Order date</string>
+    <string name="order_type">Order type</string>
+    <string name="purchase_invoice">Purchase invoice</string>
+    <string name="order_price">Order price</string>
+    <string name="it_will_be_determined_later">It will be determined later</string>
+    <string name="delivery_price">Delivery price</string>
+    <string name="discount">Discount</string>
+    <string name="total">Total</string>
+    <string name="cash">Cash</string>
+    <string name="wallet">Wallet</string>
+    <string name="e_payment">E-payment</string>
+    <string name="payment_was_successful">Payment was successful</string>
+    <string name="slide_to_cancel">Swipe to cancel</string>
+    <string name="write_ur_msg">Write your message</string>
+    <string name="send_pack_txt">Send Package</string>
+    <string name="receive_pack_txt">Receive Package</string>
+    <string name="telephone_menu">Unified number</string>
+    <string name="notifs_menu">Notifications</string>
+    <string name="change_status">Account Status</string>
+    <string name="app_services">App Services</string>
+    <string name="app_services_note">Activate the service that you want to receive orders from</string>
+    <string name="thanks_accept">Thanks for accepting</string>
+    <string name="thanks_buy">Thanks for Buying</string>
+    <string name="delivery_price_add">Please specify your delivery price</string>
+    <string name="order_cost">Please specify order cost</string>
+    <string name="app_commission">Commission</string>
+    <string name="comm_intro">You can use bank transfers to make a commission payment throw our following bank accounts</string>
+    <string name="accout_name">Account Owner</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="account_number_international">IBAN Number</string>
+    <string name="comm_after">Please fill the following form after sending your commission in order to attach it to your membership</string>
+    <string name="app_commission_form">Commission Transfer Form</string>
+    <string name="comm_amount">Commission Amount</string>
+    <string name="comm_bank">Bank Name</string>
+    <string name="comm_time">Date</string>
+    <string name="comm_name">Your Name</string>
+    <string name="notes">Notes</string>
+    <string name="id_number">ID number</string>
+    <string name="license_image">License image</string>
+    <string name="id_card_residence">ID card - Residence</string>
+    <string name="client_info">Client info</string>
+    <string name="take_invoice_picture">Take invoice picture</string>
+    <string name="rate_the_client">Rate the client</string>
+    <string name="executed_orders">Executed orders</string>
+    <string name="order_s">Order(s)</string>
+    <string name="total_amount_of_delivery">Total delivery amount</string>
+    <string name="your_balance_now">Your balance now</string>
+    <string name="commission_transfer_form">Commission Transfer Form</string>
+    <string name="the_balance">Balance</string>
+
+    <string name="notifications">Notifications</string>
+    <string name="empty_mobile">Mobile can\'t be empty</string>
+    <string name="empty_password">Password can\'t be empty</string>
+    <string name="invalid_password">Password length must be 6 to 12 digits</string>
+    <string name="accept_terms_to_continue">Please accept terms and conditions to continue</string>
+    <string name="empty_code">Code can\'t be empty</string>
+    <string name="after">After</string>
+    <string name="seconds">seconds</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="your_account_successfully_activated">Your account successfully activated</string>
+    <string name="please_complete_your_profile_information">Please, complete your profile information</string>
+    <string name="ok">OK</string>
+    <string name="empty_full_name">Full name can\'t be empty</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="empty_msg_title">Message title can\'t be empty</string>
+    <string name="empty_msg_text">Message text can\'t be empty</string>
+    <string name="phone_entry">Enter your mobile number</string>
+    <string name="phone_entry_info">Please enter your registered mobile number</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_the_new_password">Enter the new password</string>
+    <string name="please_enter_the_new_password">Please enter the new password</string>
+    <string name="passwords_not_matched">Passwords do not match</string>
+    <string name="select_gender">Select gender</string>
+    <string name="am_text">AM</string>
+    <string name="pm_text">PM</string>
+    <string name="all">All</string>
+    <string name="toggle_language"><u>العربية</u></string>
+    <string name="back">Back</string>
+    <string name="license_image_is_required">License image is required</string>
+    <string name="iqama_image_is_required">ID card - Residence is required</string>
+    <string name="select_area">Select an area</string>
+    <string name="select_city">Select a city</string>
+    <string name="empty_id_number">ID number can\'t be empty</string>
+    <string name="go_to_login">Login</string>
+    <string name="login_warning">Please login to continue</string>
+    <string name="acc_active">Your account is Active</string>
+    <string name="acc_ready">Your account is ready for orders</string>
+    <string name="services_enabled">Services Activated</string>
+    <string name="services_disabled">Services Stopped</string>
+    <string name="filter_orders">Filter Orders</string>
+    <string name="waiting_orders">Waiting</string>
+    <string name="delivery_orders">Delivering</string>
+    <string name="done_orders">Delivered</string>
+    <string name="canceled_orders">Canceled</string>
+    <string name="canceled">Canceled</string>
+    <string name="recording">Recording</string>
+    <string name="sending_offer">Sending\noffers</string>
+    <string name="accepted">Accepted</string>
+    <string name="please_rate_the_client">Please rate the client</string>
+    <string name="write_msg_to_app_management">Write a message to application management (optional)</string>
+    <string name="mobile_number_hint">Mobile number (05)</string>
+    <string name="available_or_not">Available/Not available</string>
+    <string name="invalid_id_number">ID number must be 10 digits</string>
+    <string name="choose_area">Choose area</string>
+    <string name="choose_city">Choose city</string>
+    <string name="open_main_switch">Please activate your status from side menu</string>
+    <string name="not_my_order">This order is not belongs to you</string>
+    <string name="complete_your_profile_to_continue">Please complete you profile information to continue</string>
+    <string name="chat_text_admin">Chat With Admin</string>
+    <string name="link_not_available">Link is not available</string>
+    <string name="_0_sar">0 SAR</string>
+    <string name="error_empty_amount">Amount is empty</string>
+    <string name="error_empty_bankName">Bank name is empty</string>
+    <string name="error_empty_date">Transfer date is empty</string>
+    <string name="error_empty_username">Transfer name is empty</string>
+    <string name="error_empty_billImage">Choose commission bill image</string>
+    <string name="done_comm">Done</string>
+    <string name="msg_comm">"Form sent and registered to your membership successfully "</string>
+    <string name="cancel_offer">Cancel offer</string>
+    <string name="additional_service_price">Additional service price</string>
+    <string name="comm_app">App commission</string>
+    <string name="delivery_amount_after_discount">Delivery amount after discount</string>
+    <string name="total_discounts_amount">Total discounts amount</string>
+    <string name="deserved_for_you">Total amount deserved for you</string>
+    <string name="deserved_for_app">Total amount deserved for Yalla Go</string>
+    <string name="invalid_mobile_prefix">Mobile number must start with 05</string>
+    <string name="payment_is_not_selected">The client has not selected the payment method</string>
+    <string name="invalid_telegram_link">Invalid Telegram link</string>
+    <string name="check_internet_conn">Check your internet connection</string>
+    <string name="weak_internet_conn">Your internet connection is weak, please try again later!</string>
+    <string name="login_again">Please Login Again</string>
+    <string name="login_to_continue">Please login to proceed</string>
+    <string name="charge_remaining_amount">Charge the remaining amount to the client\'s wallet</string>
+    <string name="enter_remaining_amount">Enter the remaining amount</string>
+    <string name="enter_valid_value">Enter a valid value</string>
+    <string name="minimum_shipping_is">Minimum shipping price is</string>
+    <string name="deleted">Deleted</string>
+    <string name="n_a">N/A</string>
+    <string name="your_account_deleted">Your account has been deleted .. Please contact the admin</string>
+    <string name="not_authorized">Not authorized</string>
+    <string name="location_is_required">Location permission is required</string>
+    <string name="go_to_app_settings">Go to app settings</string>
+    <string name="mic_is_required">Microphone is required</string>
+    <string name="waiting">Waiting</string>
+    <string name="delivering1">Delivering</string>
+    <string name="delivered1">Delivered</string>
+    <string name="you">You</string>
+    <string name="admin">Admin</string>
+    <string name="update_available">Update available</string>
+    <string name="check_out_latest_version">Check out the latest version available of Yalla Go!</string>
+    <string name="update_not_available">Update not available</string>
+    <string name="update_not_available_description">No update available. Check for updates again later!</string>
+    <string name="update">Update</string>
+    <string name="not_interested">Not interested</string>
+    <string name="check_for_updates">Check for updates</string>
+    <string name="for_android">For Android</string>
+    <string name="for_ios">For iOS</string>
+    <string name="share_via">Share via</string>
+    <string name="website">Website</string>
+    <string name="address">Address</string>
+    <string name="store_approval">Store approval</string>
+    <string name="night_mode">Night mode</string>
+    <string name="youtube">Youtube</string>
+    <string name="twitter">Twitter</string>
+    <string name="snap_chat">Snapchat</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+</resources>

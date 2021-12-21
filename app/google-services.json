@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "991103084484",
+    "firebase_url": "https://yallago-307107-default-rtdb.firebaseio.com",
+    "project_id": "yallago-307107",
+    "storage_bucket": "yallago-307107.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991103084484:android:ceb6317e861ed9cea4a691",
+        "android_client_info": {
+          "package_name": "com.qrc.yallagooclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991103084484-16skppopjuvhvr85bki430ob8468rk90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2uR4d_h-m9v7_j0nFiiyxckC8uW72I-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991103084484-16skppopjuvhvr85bki430ob8468rk90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991103084484:android:c57278ee67b3b8b0a4a691",
+        "android_client_info": {
+          "package_name": "com.qrc.yallagoodelegate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991103084484-16skppopjuvhvr85bki430ob8468rk90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2uR4d_h-m9v7_j0nFiiyxckC8uW72I-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991103084484-16skppopjuvhvr85bki430ob8468rk90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
