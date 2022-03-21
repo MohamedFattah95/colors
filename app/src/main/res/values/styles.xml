@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowContentOverlay">@null</item>
@@ -29,7 +29,7 @@
         <item name="bgColor">#ffffff</item>
         <item name="cardBg">#fafafa</item>
         <item name="gradientBg">@drawable/gradient_bg</item>
-        <item name="app_logo">@drawable/ic_logo1</item>
+        <item name="app_logo">@mipmap/ic_launcher_foreground</item>
     </style>
 
     <style name="AppThemeDark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -62,13 +62,8 @@
         <item name="bgColor">@color/bg_dark</item>
         <item name="cardBg">@color/black_effective</item>
         <item name="gradientBg">@color/black_effective</item>
-        <item name="app_logo">@drawable/ic_logo1</item>
+        <item name="app_logo">@mipmap/ic_launcher_foreground</item>
 
-    </style>
-
-    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
-        <item name="android:progressBackgroundTint">@color/colorAccent</item>
-        <item name="android:progressTint">@color/colorPrimary</item>
     </style>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
@@ -83,27 +78,6 @@
         <item name="fontPath">fonts/source-sans-pro/SourceSansPro-Regular.ttf</item>
     </style>
 
-    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:backgroundDimAmount">0.7</item>
-    </style>
-
-
-    <style name="FilterDialogTheme" parent="Theme.MaterialComponents.Light.Dialog">
-        <item name="android:colorAccent" tools:ignore="NewApi">@color/colorPrimary</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:windowCloseOnTouchOutside">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:backgroundDimAmount">0.7</item>
-    </style>
 
     <!-- Switch style -->
     <style name="SSwitch" parent="Theme.AppCompat.Light">

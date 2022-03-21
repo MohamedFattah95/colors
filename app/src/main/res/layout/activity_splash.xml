@@ -16,11 +16,11 @@
         tools:ignore="ContentDescription,RtlHardcoded" />
 
     <ImageView
-        android:layout_width="@dimen/_100sdp"
+        android:layout_width="@dimen/_150sdp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:adjustViewBounds="true"
-        android:src="@drawable/ic_color_lens"
+        android:src="@mipmap/ic_launcher_foreground"
         tools:ignore="ContentDescription" />
 
     <ImageView

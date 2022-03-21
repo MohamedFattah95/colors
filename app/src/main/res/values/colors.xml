@@ -3,8 +3,6 @@
     <color name="colorPrimary">#7358B9</color>
     <color name="colorPrimaryDark">#4D3782</color>
     <color name="colorAccent">#fbad1a</color>
-    <color name="light_gray">#dbdbdb</color>
-    <color name="gray">#7e7e7e</color>
     <color name="dark_gray">#696969</color>
     <color name="white">#ffffff</color>
     <color name="black_effective">#2a2a2a</color>
@@ -12,34 +10,16 @@
     <color name="bg_dark">#121212</color>
 
     <!--Design colors-->
-    <color name="red_dark2">#D85A1B</color>
-    <color name="light_green">#78DC96</color>
-    <color name="light_blue">#55C8F0</color>
-    <color name="blue_black_light">#516179</color>
     <color name="orange">#FBAD1A</color>
 
     <!-- App Colors -->
 
-    <color name="colorBlueDark">#08ACD5</color>
-    <color name="colorGreenLighter">#DBFBDB</color>
-    <color name="colorYellowLight">#FFFAE5</color>
     <color name="colorGreen">#7EBE78</color>
 
     <!-- Common Colors -->
-    <color name="colorGreenDark">#00AA00</color>
-    <color name="colorGreenLite">#47B43D</color>
     <color name="colorGold">#FFD700</color>
-    <color name="colorOrangeLite2">#FFD391</color>
-    <color name="colorGray">#EFEFEF</color>
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#ffffff</color>
-    <color name="colorGrayLite">#F1F4F8</color>
-    <color name="colorGrayExtraLite">#EAEAEA</color>
-    <color name="colorGraySemiDark">#bfbfbf</color>
-    <color name="colorRedLite">#F65C5C</color>
-    <color name="colorOrangeDark">#FBAD1A</color>
-    <color name="colorYellow">#FCB820</color>
     <color name="colorGrayDark">#6A757B</color>
-    <color name="colorGrayDefault">#808080</color>
     <color name="translucent_black">#22000000</color>
 </resources>
