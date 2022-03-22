@@ -13,7 +13,7 @@ import com.fci.colors_app.ui.faqs.FAQsViewModel;
 import com.fci.colors_app.ui.main.MainViewModel;
 import com.fci.colors_app.ui.select_language.SelectLanguageViewModel;
 import com.fci.colors_app.ui.splash.SplashViewModel;
-import com.fci.colors_app.ui.terms.TermsViewModel;
+import com.fci.colors_app.ui.terms.PaletteDetailsViewModel;
 import com.fci.colors_app.ui.web_view.WebViewModel;
 import com.fci.colors_app.utils.rx.SchedulerProvider;
 
@@ -63,10 +63,10 @@ public class ActivityModule {
     }
 
     @Provides
-    TermsViewModel provideTermsViewModel(DataManager dataManager, SchedulerProvider schedulerProvider) {
-        Supplier<TermsViewModel> supplier = () -> new TermsViewModel(dataManager, schedulerProvider);
-        ViewModelProviderFactory<TermsViewModel> factory = new ViewModelProviderFactory<>(TermsViewModel.class, supplier);
-        return new ViewModelProvider(activity, factory).get(TermsViewModel.class);
+    PaletteDetailsViewModel provideTermsViewModel(DataManager dataManager, SchedulerProvider schedulerProvider) {
+        Supplier<PaletteDetailsViewModel> supplier = () -> new PaletteDetailsViewModel(dataManager, schedulerProvider);
+        ViewModelProviderFactory<PaletteDetailsViewModel> factory = new ViewModelProviderFactory<>(PaletteDetailsViewModel.class, supplier);
+        return new ViewModelProvider(activity, factory).get(PaletteDetailsViewModel.class);
     }
 
     @Provides

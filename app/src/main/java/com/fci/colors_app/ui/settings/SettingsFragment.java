@@ -16,7 +16,7 @@ import com.fci.colors_app.di.component.FragmentComponent;
 import com.fci.colors_app.ui.base.BaseFragment;
 import com.fci.colors_app.ui.faqs.FAQsActivity;
 import com.fci.colors_app.ui.main.MainActivity;
-import com.fci.colors_app.ui.terms.TermsActivity;
+import com.fci.colors_app.ui.terms.PaletteDetailsActivity;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 
 import butterknife.BindView;
@@ -78,7 +78,7 @@ public class SettingsFragment extends BaseFragment<SettingsViewModel> implements
 
                 break;
             case R.id.tv_terms:
-                startActivity(TermsActivity.newIntent(getActivity()));
+                startActivity(PaletteDetailsActivity.newIntent(getActivity()));
                 break;
             case R.id.tv_about:
 

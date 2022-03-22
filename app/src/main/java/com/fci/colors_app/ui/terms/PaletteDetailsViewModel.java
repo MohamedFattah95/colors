@@ -11,10 +11,10 @@ import com.fci.colors_app.ui.base.BaseViewModel;
 import com.fci.colors_app.utils.rx.SchedulerProvider;
 
 
-public class TermsViewModel extends BaseViewModel<TermsNavigator> {
+public class PaletteDetailsViewModel extends BaseViewModel<PaletteDetailsNavigator> {
     private MutableLiveData<DataWrapperModel<SettingsModel>> settingsLiveData;
 
-    public TermsViewModel(DataManager dataManager, SchedulerProvider schedulerProvider) {
+    public PaletteDetailsViewModel(DataManager dataManager, SchedulerProvider schedulerProvider) {
         super(dataManager, schedulerProvider);
         settingsLiveData = new MutableLiveData<>();
     }

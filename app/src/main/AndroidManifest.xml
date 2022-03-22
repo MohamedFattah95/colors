@@ -44,7 +44,7 @@
 
         <activity
             android:configChanges="locale"
-            android:name="com.fci.colors_app.ui.terms.TermsActivity"
+            android:name="com.fci.colors_app.ui.terms.PaletteDetailsActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
 

@@ -7,7 +7,7 @@ import com.fci.colors_app.ui.faqs.FAQsActivity;
 import com.fci.colors_app.ui.main.MainActivity;
 import com.fci.colors_app.ui.select_language.SelectLanguageActivity;
 import com.fci.colors_app.ui.splash.SplashActivity;
-import com.fci.colors_app.ui.terms.TermsActivity;
+import com.fci.colors_app.ui.terms.PaletteDetailsActivity;
 import com.fci.colors_app.ui.web_view.WebViewActivity;
 
 import dagger.Component;
@@ -20,7 +20,7 @@ public interface ActivityComponent {
 
     void inject(SplashActivity activity);
 
-    void inject(TermsActivity activity);
+    void inject(PaletteDetailsActivity activity);
 
     void inject(SelectLanguageActivity activity);
 
