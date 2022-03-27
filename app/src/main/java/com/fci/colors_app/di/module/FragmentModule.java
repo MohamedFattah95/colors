@@ -8,8 +8,11 @@ import com.fci.colors_app.ViewModelProviderFactory;
 import com.fci.colors_app.data.DataManager;
 import com.fci.colors_app.ui.base.BaseFragment;
 import com.fci.colors_app.ui.home.HomeViewModel;
+import com.fci.colors_app.ui.home.PalettesAdapter;
 import com.fci.colors_app.ui.settings.SettingsViewModel;
 import com.fci.colors_app.utils.rx.SchedulerProvider;
+
+import java.util.ArrayList;
 
 import dagger.Module;
 import dagger.Provides;
@@ -26,6 +29,11 @@ public class FragmentModule {
     @Provides
     LinearLayoutManager provideLinearLayoutManager() {
         return new LinearLayoutManager(fragment.getActivity());
+    }
+
+    @Provides
+    PalettesAdapter providePalettesAdapter() {
+        return new PalettesAdapter(new ArrayList<>());
     }
 
     @Provides

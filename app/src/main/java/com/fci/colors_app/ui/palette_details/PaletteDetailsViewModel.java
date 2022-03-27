@@ -1,5 +1,5 @@
 
-package com.fci.colors_app.ui.terms;
+package com.fci.colors_app.ui.palette_details;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

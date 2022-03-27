@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
@@ -16,19 +17,26 @@ import com.fci.colors_app.di.component.FragmentComponent;
 import com.fci.colors_app.ui.base.BaseFragment;
 import com.fci.colors_app.utils.ErrorHandlingUtils;
 
+import javax.inject.Inject;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 @SuppressLint("NonConstantResourceId")
-public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNavigator {
+public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNavigator, PalettesAdapter.Callback {
 
     public static final String TAG = "HomeFragment";
+
+
+    @Inject
+    LinearLayoutManager linearLayoutManager;
+    @Inject
+    PalettesAdapter palettesAdapter;
 
     @BindView(R.id.rvPalettes)
     RecyclerView rvPalettes;
     @BindView(R.id.swipeRefreshView)
     SwipeRefreshLayout swipeRefreshView;
-
 
     public static HomeFragment newInstance(int instance) {
         Bundle args = new Bundle();
@@ -39,8 +47,10 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
     }
 
     public void refreshData() {
-        if (swipeRefreshView != null)
+        if (swipeRefreshView != null) {
             swipeRefreshView.setRefreshing(true);
+            mViewModel.getPalettes();
+        }
 
     }
 
@@ -48,6 +58,7 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mViewModel.setNavigator(this);
+        palettesAdapter.setCallback(this);
     }
 
     @Override
@@ -66,16 +77,19 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
         if (swipeRefreshView != null)
             swipeRefreshView.setRefreshing(true);
 
-        handleSwipeLayout();
-    }
+        subscribeViewModel();
 
-    private void handleSwipeLayout() {
+        rvPalettes.setLayoutManager(linearLayoutManager);
+        rvPalettes.setAdapter(palettesAdapter);
+
         swipeRefreshView.setOnRefreshListener(() -> {
             swipeRefreshView.setRefreshing(true);
-
+            mViewModel.getPalettes();
         });
-    }
 
+        swipeRefreshView.setRefreshing(true);
+        mViewModel.getPalettes();
+    }
 
     @Override
     public void handleError(Throwable throwable) {
@@ -100,6 +114,12 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
 
     private void subscribeViewModel() {
 
+        mViewModel.getPalettesLiveData().observe(requireActivity(), response -> {
+            hideLoading();
+            swipeRefreshView.setRefreshing(false);
+            palettesAdapter.addItems(response);
+            rvPalettes.scheduleLayoutAnimation();
+        });
 
     }
 }

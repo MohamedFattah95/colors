@@ -11,9 +11,9 @@ import com.fci.colors_app.ui.error_handler.ErrorHandlerViewModel;
 import com.fci.colors_app.ui.faqs.FAQsAdapter;
 import com.fci.colors_app.ui.faqs.FAQsViewModel;
 import com.fci.colors_app.ui.main.MainViewModel;
+import com.fci.colors_app.ui.palette_details.PaletteDetailsViewModel;
 import com.fci.colors_app.ui.select_language.SelectLanguageViewModel;
 import com.fci.colors_app.ui.splash.SplashViewModel;
-import com.fci.colors_app.ui.terms.PaletteDetailsViewModel;
 import com.fci.colors_app.ui.web_view.WebViewModel;
 import com.fci.colors_app.utils.rx.SchedulerProvider;
 

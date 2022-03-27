@@ -1,6 +1,6 @@
 
 
-package com.fci.colors_app.ui.terms;
+package com.fci.colors_app.ui.palette_details;
 
 
 public interface PaletteDetailsNavigator {

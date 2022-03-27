@@ -1,5 +1,5 @@
 
-package com.fci.colors_app.ui.terms;
+package com.fci.colors_app.ui.palette_details;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

@@ -5,9 +5,12 @@ import android.content.Context;
 
 import com.fci.colors_app.data.apis.ApiHelper;
 import com.fci.colors_app.data.models.DataWrapperModel;
+import com.fci.colors_app.data.models.PaletteModel;
 import com.fci.colors_app.data.models.SettingsModel;
 import com.fci.colors_app.data.prefs.PreferencesHelper;
 import com.google.gson.Gson;
+
+import java.util.List;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -70,6 +73,11 @@ public class AppDataManager implements DataManager {
     @Override
     public Single<DataWrapperModel<SettingsModel>> getSettings() {
         return mApiHelper.getSettings();
+    }
+
+    @Override
+    public Single<List<PaletteModel>> getPalettesApiCall() {
+        return mApiHelper.getPalettesApiCall();
     }
 
 }

@@ -5,9 +5,9 @@ import com.fci.colors_app.di.scope.ActivityScope;
 import com.fci.colors_app.ui.error_handler.ErrorHandlerActivity;
 import com.fci.colors_app.ui.faqs.FAQsActivity;
 import com.fci.colors_app.ui.main.MainActivity;
+import com.fci.colors_app.ui.palette_details.PaletteDetailsActivity;
 import com.fci.colors_app.ui.select_language.SelectLanguageActivity;
 import com.fci.colors_app.ui.splash.SplashActivity;
-import com.fci.colors_app.ui.terms.PaletteDetailsActivity;
 import com.fci.colors_app.ui.web_view.WebViewActivity;
 
 import dagger.Component;

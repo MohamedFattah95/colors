@@ -16,7 +16,7 @@ import com.fci.colors_app.di.component.FragmentComponent;
 import com.fci.colors_app.ui.base.BaseFragment;
 import com.fci.colors_app.ui.faqs.FAQsActivity;
 import com.fci.colors_app.ui.main.MainActivity;
-import com.fci.colors_app.ui.terms.PaletteDetailsActivity;
+import com.fci.colors_app.ui.palette_details.PaletteDetailsActivity;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 
 import butterknife.BindView;
