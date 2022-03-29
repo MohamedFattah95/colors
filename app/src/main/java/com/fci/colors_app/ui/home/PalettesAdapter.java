@@ -1,14 +1,13 @@
 package com.fci.colors_app.ui.home;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.fci.colors_app.R;
@@ -26,9 +25,9 @@ public class PalettesAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     public static final int VIEW_TYPE_PALETTE = 1;
 
     private Callback mCallback;
-    private List<PaletteModel> mPaletteList;
+    private List<PaletteModel.SchemesBean> mPaletteList;
 
-    public PalettesAdapter(List<PaletteModel> list) {
+    public PalettesAdapter(List<PaletteModel.SchemesBean> list) {
         mPaletteList = list;
     }
 
@@ -74,7 +73,7 @@ public class PalettesAdapter extends RecyclerView.Adapter<BaseViewHolder> {
         }
     }
 
-    public void addItems(List<PaletteModel> list) {
+    public void addItems(List<PaletteModel.SchemesBean> list) {
         mPaletteList.clear();
         mPaletteList.addAll(list);
         notifyDataSetChanged();
@@ -91,14 +90,17 @@ public class PalettesAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     @SuppressLint("NonConstantResourceId")
     public class PaletteViewHolder extends BaseViewHolder {
 
-        @BindView(R.id.tv_question)
-        AppCompatTextView tvQuestion;
-        @BindView(R.id.ll_expand_collapse)
-        LinearLayout llExpandCollapse;
-        @BindView(R.id.iv_expand_collapse)
-        ImageView ivExpandCollapse;
-        @BindView(R.id.tv_answer)
-        AppCompatTextView tvAnswer;
+
+        @BindView(R.id.iv1)
+        ImageView iv1;
+        @BindView(R.id.iv2)
+        ImageView iv2;
+        @BindView(R.id.iv3)
+        ImageView iv3;
+        @BindView(R.id.iv4)
+        ImageView iv4;
+        @BindView(R.id.iv5)
+        ImageView iv5;
 
 
         public PaletteViewHolder(View itemView) {
@@ -111,11 +113,31 @@ public class PalettesAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
         }
 
-        @SuppressLint("SetTextI18n")
+        @SuppressLint({"SetTextI18n", "ResourceType"})
         public void onBind(int position) {
 
-            PaletteModel paletteModel = mPaletteList.get(position);
+            PaletteModel.SchemesBean paletteModel = mPaletteList.get(position);
 
+            if (paletteModel.getColors() != null && !paletteModel.getColors().isEmpty()) {
+
+                try {
+                    iv1.setBackgroundColor(Color.parseColor("#" + paletteModel.getColors().get(0)));
+
+                    if (paletteModel.getColors().size() >= 2)
+                        iv2.setBackgroundColor(Color.parseColor("#" + paletteModel.getColors().get(1)));
+
+                    if (paletteModel.getColors().size() >= 3)
+                        iv3.setBackgroundColor(Color.parseColor("#" + paletteModel.getColors().get(2)));
+
+                    if (paletteModel.getColors().size() >= 4)
+                        iv4.setBackgroundColor(Color.parseColor("#" + paletteModel.getColors().get(3)));
+
+                    if (paletteModel.getColors().size() >= 5)
+                        iv5.setBackgroundColor(Color.parseColor("#" + paletteModel.getColors().get(4)));
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
 
         }
     }

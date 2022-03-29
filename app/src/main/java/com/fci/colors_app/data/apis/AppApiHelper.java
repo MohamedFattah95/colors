@@ -5,8 +5,6 @@ import com.fci.colors_app.data.models.DataWrapperModel;
 import com.fci.colors_app.data.models.PaletteModel;
 import com.fci.colors_app.data.models.SettingsModel;
 
-import java.util.List;
-
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -29,7 +27,7 @@ public class AppApiHelper implements ApiHelper {
     }
 
     @Override
-    public Single<List<PaletteModel>> getPalettesApiCall() {
+    public Single<PaletteModel> getPalettesApiCall() {
         return networkService.getPalettesApiCall();
     }
 

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginHorizontal="@dimen/_8sdp"
     android:layout_marginVertical="@dimen/_4sdp"
     app:cardCornerRadius="20dp">
@@ -13,34 +14,39 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/iv1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@color/colorAccent" />
+            tools:src="@color/colorAccent" />
 
         <ImageView
+            android:id="@+id/iv2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@color/successColor" />
+            tools:src="@color/successColor" />
 
         <ImageView
+            android:id="@+id/iv3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@color/errorColor" />
+            tools:src="@color/errorColor" />
 
         <ImageView
+            android:id="@+id/iv4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@color/colorPrimary" />
+            tools:src="@color/colorPrimary" />
 
         <ImageView
+            android:id="@+id/iv5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@color/colorGold" />
+            tools:src="@color/colorGold" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

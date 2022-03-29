@@ -74,11 +74,6 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
     private void setUp() {
         subscribeViewModel();
 
-        if (swipeRefreshView != null)
-            swipeRefreshView.setRefreshing(true);
-
-        subscribeViewModel();
-
         rvPalettes.setLayoutManager(linearLayoutManager);
         rvPalettes.setAdapter(palettesAdapter);
 
@@ -117,7 +112,7 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
         mViewModel.getPalettesLiveData().observe(requireActivity(), response -> {
             hideLoading();
             swipeRefreshView.setRefreshing(false);
-            palettesAdapter.addItems(response);
+            palettesAdapter.addItems(response.getSchemes());
             rvPalettes.scheduleLayoutAnimation();
         });
 

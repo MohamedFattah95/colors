@@ -9,11 +9,9 @@ import com.fci.colors_app.data.models.PaletteModel;
 import com.fci.colors_app.ui.base.BaseViewModel;
 import com.fci.colors_app.utils.rx.SchedulerProvider;
 
-import java.util.List;
-
 public class HomeViewModel extends BaseViewModel<HomeNavigator> {
 
-    private MutableLiveData<List<PaletteModel>> palettesLiveData;
+    private MutableLiveData<PaletteModel> palettesLiveData;
 
 
     public HomeViewModel(DataManager dataManager, SchedulerProvider schedulerProvider) {
@@ -21,7 +19,7 @@ public class HomeViewModel extends BaseViewModel<HomeNavigator> {
         palettesLiveData = new MutableLiveData<>();
     }
 
-    public MutableLiveData<List<PaletteModel>> getPalettesLiveData() {
+    public MutableLiveData<PaletteModel> getPalettesLiveData() {
         return palettesLiveData;
     }
 
