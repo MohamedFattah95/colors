@@ -85,11 +85,11 @@ public class PalettesAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     }
 
     public interface Callback {
+        void showPaletteDetails(PaletteModel.SchemesBean paletteModel);
     }
 
     @SuppressLint("NonConstantResourceId")
     public class PaletteViewHolder extends BaseViewHolder {
-
 
         @BindView(R.id.iv1)
         ImageView iv1;
@@ -123,21 +123,37 @@ public class PalettesAdapter extends RecyclerView.Adapter<BaseViewHolder> {
                 try {
                     iv1.setBackgroundColor(Color.parseColor("#" + paletteModel.getColors().get(0)));
 
-                    if (paletteModel.getColors().size() >= 2)
+                    if (paletteModel.getColors().size() >= 2) {
                         iv2.setBackgroundColor(Color.parseColor("#" + paletteModel.getColors().get(1)));
+                        iv2.setVisibility(View.VISIBLE);
+                    } else
+                        iv2.setVisibility(View.GONE);
 
-                    if (paletteModel.getColors().size() >= 3)
+                    if (paletteModel.getColors().size() >= 3) {
                         iv3.setBackgroundColor(Color.parseColor("#" + paletteModel.getColors().get(2)));
+                        iv3.setVisibility(View.VISIBLE);
+                    } else
+                        iv3.setVisibility(View.GONE);
 
-                    if (paletteModel.getColors().size() >= 4)
+                    if (paletteModel.getColors().size() >= 4) {
                         iv4.setBackgroundColor(Color.parseColor("#" + paletteModel.getColors().get(3)));
+                        iv4.setVisibility(View.VISIBLE);
+                    } else
+                        iv4.setVisibility(View.GONE);
 
-                    if (paletteModel.getColors().size() >= 5)
+                    if (paletteModel.getColors().size() >= 5) {
                         iv5.setBackgroundColor(Color.parseColor("#" + paletteModel.getColors().get(4)));
+                        iv5.setVisibility(View.VISIBLE);
+                    } else
+                        iv5.setVisibility(View.GONE);
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
+
+
+            itemView.setOnClickListener(v -> mCallback.showPaletteDetails(paletteModel));
 
         }
     }

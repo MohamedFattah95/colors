@@ -6,60 +6,99 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/color1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/dark_gray"
         android:gravity="center_vertical"
-        android:paddingStart="@dimen/_36sdp"
-        android:text="4758490"
+        android:padding="@dimen/_36sdp"
+        android:shadowColor="@color/colorBlack"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:textAlignment="textEnd"
         android:textColor="@color/white"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/red"
-        android:gravity="center_vertical"
-        android:paddingStart="@dimen/_36sdp"
-        android:text="4758490"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/colorPrimary"
-        android:gravity="center_vertical"
-        android:paddingStart="@dimen/_36sdp"
-        android:text="4758490"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/colorGold"
-        android:gravity="center_vertical"
-        android:paddingStart="@dimen/_36sdp"
-        android:text="4758490"
-        android:textColor="@color/white"
+        android:textDirection="rtl"
         android:textStyle="bold"
-        tools:ignore="TextContrastCheck" />
+        tools:background="@color/dark_gray"
+        tools:ignore="RtlCompat"
+        tools:text="4758490" />
 
     <TextView
+        android:id="@+id/color2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/errorColor"
         android:gravity="center_vertical"
-        android:paddingStart="@dimen/_36sdp"
-        android:text="4758490"
+        android:padding="@dimen/_36sdp"
+        android:shadowColor="@color/colorBlack"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:textAlignment="textEnd"
         android:textColor="@color/white"
-        android:textStyle="bold" />
+        android:textDirection="rtl"
+        android:textStyle="bold"
+        tools:background="@color/red"
+        tools:ignore="RtlCompat"
+        tools:text="4758490" />
+
+    <TextView
+        android:id="@+id/color3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_36sdp"
+        android:shadowColor="@color/colorBlack"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textDirection="rtl"
+        android:textStyle="bold"
+        tools:background="@color/colorPrimary"
+        tools:ignore="RtlCompat"
+        tools:text="4758490" />
+
+    <TextView
+        android:id="@+id/color4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_36sdp"
+        android:shadowColor="@color/colorBlack"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textDirection="rtl"
+        android:textStyle="bold"
+        tools:background="@color/colorGold"
+        tools:ignore="RtlCompat,TextContrastCheck"
+        tools:text="4758490" />
+
+    <TextView
+        android:id="@+id/color5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_36sdp"
+        android:shadowColor="@color/colorBlack"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textDirection="rtl"
+        android:textStyle="bold"
+        tools:background="@color/errorColor"
+        tools:ignore="RtlCompat"
+        tools:text="4758490" />
 
 </LinearLayout>
 

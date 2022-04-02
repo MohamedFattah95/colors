@@ -2,9 +2,10 @@ package com.fci.colors_app.data.models;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class PaletteModel {
+public class PaletteModel implements Serializable {
 
     @SerializedName("schemes")
     private List<SchemesBean> schemes;
@@ -37,7 +38,7 @@ public class PaletteModel {
         this.messages = messages;
     }
 
-    public static class SchemesBean {
+    public static class SchemesBean implements Serializable {
         @SerializedName("colors")
         private List<String> colors;
         @SerializedName("id")
@@ -69,7 +70,7 @@ public class PaletteModel {
             this.tags = tags;
         }
 
-        public static class TagsBean {
+        public static class TagsBean implements Serializable {
             @SerializedName("id")
             private String id;
             @SerializedName("name")

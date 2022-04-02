@@ -13,8 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.fci.colors_app.R;
+import com.fci.colors_app.data.models.PaletteModel;
 import com.fci.colors_app.di.component.FragmentComponent;
 import com.fci.colors_app.ui.base.BaseFragment;
+import com.fci.colors_app.ui.palette_details.PaletteDetailsActivity;
 import com.fci.colors_app.utils.ErrorHandlingUtils;
 
 import javax.inject.Inject;
@@ -115,6 +117,13 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
             palettesAdapter.addItems(response.getSchemes());
             rvPalettes.scheduleLayoutAnimation();
         });
+
+    }
+
+    @Override
+    public void showPaletteDetails(PaletteModel.SchemesBean paletteModel) {
+
+        startActivity(PaletteDetailsActivity.newIntent(getActivity()).putExtra("palette", paletteModel));
 
     }
 }
