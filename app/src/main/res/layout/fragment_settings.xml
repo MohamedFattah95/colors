@@ -26,65 +26,6 @@
             android:layout_height="@dimen/_1sdp"
             android:background="?cardBg" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_1sdp"
-            android:background="?cardBg" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_privacy_policy"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_48sdp"
-            android:layout_gravity="center"
-            android:drawablePadding="@dimen/_16sdp"
-            android:gravity="center_vertical"
-            android:text="@string/privacy_policy"
-            android:textColor="?textColor"
-            android:textSize="@dimen/_10ssp"
-            app:drawableEndCompat="@drawable/ic_arrow_left"
-            app:drawableStartCompat="@drawable/ic_contract" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_1sdp"
-            android:background="?cardBg" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_terms"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_48sdp"
-            android:layout_gravity="center"
-            android:drawablePadding="@dimen/_16sdp"
-            android:gravity="center_vertical"
-            android:text="@string/terms"
-            android:textColor="?textColor"
-            android:textSize="@dimen/_10ssp"
-            app:drawableEndCompat="@drawable/ic_arrow_left"
-            app:drawableStartCompat="@drawable/ic_terms" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_1sdp"
-            android:background="?cardBg" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_about"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_48sdp"
-            android:layout_gravity="center"
-            android:drawablePadding="@dimen/_16sdp"
-            android:gravity="center_vertical"
-            android:text="@string/about_captain_saudi"
-            android:textColor="?textColor"
-            android:textSize="@dimen/_10ssp"
-            app:drawableEndCompat="@drawable/ic_arrow_left"
-            app:drawableStartCompat="@drawable/ic_lightbulb" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_1sdp"
-            android:background="?cardBg" />
-
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_faq"
             android:layout_width="match_parent"
@@ -98,41 +39,6 @@
             app:drawableEndCompat="@drawable/ic_arrow_left"
             app:drawableStartCompat="@drawable/ic_information" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_1sdp"
-            android:background="?cardBg" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_complaints_and_suggestions"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_48sdp"
-            android:layout_gravity="center"
-            android:drawablePadding="@dimen/_16sdp"
-            android:gravity="center_vertical"
-            android:text="@string/complaints_and_suggestions"
-            android:textColor="?textColor"
-            android:textSize="@dimen/_10ssp"
-            app:drawableEndCompat="@drawable/ic_arrow_left"
-            app:drawableStartCompat="@drawable/ic_email" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_1sdp"
-            android:background="?cardBg" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_using_app"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_48sdp"
-            android:layout_gravity="center"
-            android:drawablePadding="@dimen/_16sdp"
-            android:gravity="center_vertical"
-            android:text="@string/how_it_works"
-            android:textColor="?textColor"
-            android:textSize="@dimen/_10ssp"
-            app:drawableEndCompat="@drawable/ic_arrow_left"
-            app:drawableStartCompat="@drawable/ic_touch" />
 
         <View
             android:layout_width="match_parent"
@@ -151,53 +57,7 @@
             android:textSize="@dimen/_10ssp"
             app:drawableStartCompat="@drawable/ic_share" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_1sdp"
-            android:background="?cardBg" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_rate_us"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_48sdp"
-            android:layout_gravity="center"
-            android:drawablePadding="@dimen/_16sdp"
-            android:gravity="center_vertical"
-            android:text="@string/rate_us"
-            android:textColor="?textColor"
-            android:textSize="@dimen/_10ssp"
-            app:drawableStartCompat="@drawable/ic_star" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_1sdp"
-            android:background="?cardBg" />
-
-        <LinearLayout
-            android:id="@+id/ll_update_app"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_48sdp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:text="@string/check_for_updates"
-                android:textColor="?textColor"
-                android:textSize="@dimen/_10ssp" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_app_version"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center_vertical"
-                android:textColor="?metaTextColor"
-                android:textSize="@dimen/_8ssp" />
-        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

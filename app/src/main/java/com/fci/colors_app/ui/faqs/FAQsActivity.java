@@ -61,15 +61,15 @@ public class FAQsActivity extends BaseActivity<FAQsViewModel> implements FAQsNav
         rvFaq.setLayoutManager(linearLayoutManager);
         rvFaq.setAdapter(faqsAdapter);
 
-        swipeFaq.setOnRefreshListener(() -> {
-            showLoading();
-            swipeFaq.setRefreshing(true);
-            mViewModel.getFAQs();
-        });
-
-        showLoading();
-        swipeFaq.setRefreshing(true);
-        mViewModel.getFAQs();
+//        swipeFaq.setOnRefreshListener(() -> {
+//            showLoading();
+//            swipeFaq.setRefreshing(true);
+//            mViewModel.getFAQs();
+//        });
+//
+//        showLoading();
+//        swipeFaq.setRefreshing(true);
+//        mViewModel.getFAQs();
     }
 
     private void subscribeViewModel() {
