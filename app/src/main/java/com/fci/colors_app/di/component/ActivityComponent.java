@@ -4,6 +4,7 @@ import com.fci.colors_app.di.module.ActivityModule;
 import com.fci.colors_app.di.scope.ActivityScope;
 import com.fci.colors_app.ui.error_handler.ErrorHandlerActivity;
 import com.fci.colors_app.ui.faqs.FAQsActivity;
+import com.fci.colors_app.ui.img_palette.ImgPaletteActivity;
 import com.fci.colors_app.ui.main.MainActivity;
 import com.fci.colors_app.ui.palette_details.PaletteDetailsActivity;
 import com.fci.colors_app.ui.select_language.SelectLanguageActivity;
@@ -29,4 +30,6 @@ public interface ActivityComponent {
     void inject(ErrorHandlerActivity activity);
 
     void inject(WebViewActivity activity);
+
+    void inject(ImgPaletteActivity activity);
 }

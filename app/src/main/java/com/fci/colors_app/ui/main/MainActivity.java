@@ -18,6 +18,7 @@ import com.fci.colors_app.di.component.ActivityComponent;
 import com.fci.colors_app.ui.base.BaseActivity;
 import com.fci.colors_app.ui.base.BaseFragment;
 import com.fci.colors_app.ui.home.HomeFragment;
+import com.fci.colors_app.ui.palettes.PalettesFragment;
 import com.fci.colors_app.ui.settings.SettingsFragment;
 import com.fci.colors_app.utils.ErrorHandlingUtils;
 import com.fci.colors_app.utils.LanguageHelper;
@@ -69,6 +70,7 @@ public class MainActivity extends BaseActivity<MainViewModel> implements MainNav
 
         navigation_fragments = new ArrayList<>();
         navigation_fragments.add(HomeFragment.newInstance(0));
+        navigation_fragments.add(PalettesFragment.newInstance(0));
         navigation_fragments.add(SettingsFragment.newInstance(0));
         fragNavController.setRootFragments(navigation_fragments);
 
@@ -109,6 +111,7 @@ public class MainActivity extends BaseActivity<MainViewModel> implements MainNav
             mDrawer.closeDrawers();
         } else if (!(fragNavController.getCurrentFrag() instanceof HomeFragment)) {
             fragNavController.switchTab(0);
+            toolbarTitle.setText(getString(R.string.home_menu));
             mNavigationView.setCheckedItem(mNavigationView.getMenu().getItem(FragNavController.TAB1));
             fragNavController.clearStack();
         } else {
@@ -157,8 +160,14 @@ public class MainActivity extends BaseActivity<MainViewModel> implements MainNav
                             ((HomeFragment) navigation_fragments.get(0)).refreshData();
                             return true;
 
-                        case R.id.navSettings:
+                        case R.id.navPalettes:
                             fragNavController.switchTab(1);
+                            toolbarTitle.setText(R.string.palettes_menu);
+                            ((PalettesFragment) navigation_fragments.get(1)).refreshData();
+                            return true;
+
+                        case R.id.navSettings:
+                            fragNavController.switchTab(2);
                             toolbarTitle.setText(R.string.settings_menu);
                             return true;
 
@@ -186,16 +195,15 @@ public class MainActivity extends BaseActivity<MainViewModel> implements MainNav
 
     }
 
-    private void unlockDrawer() {
-        if (mDrawer != null) {
-            mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
-        }
-    }
-
     @Override
     public void pushFragment(Fragment fragment) {
         fragNavController.pushFragment(fragment);
     }
 
 
+    public void navigateToPalettes() {
+        fragNavController.switchTab(1);
+        toolbarTitle.setText(R.string.palettes_menu);
+        ((PalettesFragment) navigation_fragments.get(1)).refreshData();
+    }
 }

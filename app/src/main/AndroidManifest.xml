@@ -54,7 +54,7 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
 
-
+        <activity android:name="com.tatwadeep.livecameracolorpickerlib.PickColorActivity" />
 
         <activity
             android:configChanges="locale"
@@ -86,6 +86,7 @@
             android:name="com.fci.colors_app.ui.error_handler.ErrorHandlerActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
+        <activity android:name=".ui.img_palette.ImgPaletteActivity" />
 
     </application>
 

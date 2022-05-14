@@ -10,6 +10,7 @@ import com.fci.colors_app.ui.base.BaseActivity;
 import com.fci.colors_app.ui.error_handler.ErrorHandlerViewModel;
 import com.fci.colors_app.ui.faqs.FAQsAdapter;
 import com.fci.colors_app.ui.faqs.FAQsViewModel;
+import com.fci.colors_app.ui.img_palette.ImgPaletteViewModel;
 import com.fci.colors_app.ui.main.MainViewModel;
 import com.fci.colors_app.ui.palette_details.PaletteDetailsViewModel;
 import com.fci.colors_app.ui.select_language.SelectLanguageViewModel;
@@ -88,5 +89,12 @@ public class ActivityModule {
         Supplier<ErrorHandlerViewModel> supplier = () -> new ErrorHandlerViewModel(dataManager, schedulerProvider);
         ViewModelProviderFactory<ErrorHandlerViewModel> factory = new ViewModelProviderFactory<>(ErrorHandlerViewModel.class, supplier);
         return new ViewModelProvider(activity, factory).get(ErrorHandlerViewModel.class);
+    }
+
+    @Provides
+    ImgPaletteViewModel provideImgPaletteViewModel(DataManager dataManager, SchedulerProvider schedulerProvider) {
+        Supplier<ImgPaletteViewModel> supplier = () -> new ImgPaletteViewModel(dataManager, schedulerProvider);
+        ViewModelProviderFactory<ImgPaletteViewModel> factory = new ViewModelProviderFactory<>(ImgPaletteViewModel.class, supplier);
+        return new ViewModelProvider(activity, factory).get(ImgPaletteViewModel.class);
     }
 }

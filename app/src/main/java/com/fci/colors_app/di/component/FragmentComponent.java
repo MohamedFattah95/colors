@@ -3,6 +3,7 @@ package com.fci.colors_app.di.component;
 import com.fci.colors_app.di.module.FragmentModule;
 import com.fci.colors_app.di.scope.FragmentScope;
 import com.fci.colors_app.ui.home.HomeFragment;
+import com.fci.colors_app.ui.palettes.PalettesFragment;
 import com.fci.colors_app.ui.settings.SettingsFragment;
 
 import dagger.Component;
@@ -15,4 +16,5 @@ public interface FragmentComponent {
 
     void inject(SettingsFragment fragment);
 
+    void inject(PalettesFragment fragment);
 }

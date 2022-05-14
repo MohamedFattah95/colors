@@ -7,6 +7,11 @@
             android:title="@string/home_menu" />
 
         <item
+            android:id="@+id/navPalettes"
+            android:icon="@drawable/ic_color_lens"
+            android:title="@string/palettes_menu" />
+
+        <item
             android:id="@+id/navSettings"
             android:icon="@drawable/ic_menu_sett"
             android:title="@string/settings_menu" />

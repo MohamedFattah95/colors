@@ -1,4 +1,4 @@
-package com.fci.colors_app.ui.home;
+package com.fci.colors_app.ui.palettes;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;

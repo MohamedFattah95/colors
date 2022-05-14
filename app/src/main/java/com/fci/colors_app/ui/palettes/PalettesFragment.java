@@ -1,8 +1,6 @@
-package com.fci.colors_app.ui.home;
+package com.fci.colors_app.ui.palettes;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,46 +8,49 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.fci.colors_app.R;
 import com.fci.colors_app.data.models.PaletteModel;
 import com.fci.colors_app.di.component.FragmentComponent;
 import com.fci.colors_app.ui.base.BaseFragment;
-import com.fci.colors_app.ui.main.MainActivity;
 import com.fci.colors_app.ui.palette_details.PaletteDetailsActivity;
-import com.fci.colors_app.ui.palettes.PalettesAdapter;
 import com.fci.colors_app.utils.ErrorHandlingUtils;
-import com.github.dhaval2404.imagepicker.ImagePicker;
 
-import java.io.File;
+import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 @SuppressLint("NonConstantResourceId")
-public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNavigator, PalettesAdapter.Callback {
+public class PalettesFragment extends BaseFragment<PalettesViewModel> implements PalettesNavigator, PalettesAdapter.Callback {
 
-    public static final String TAG = "HomeFragment";
-    private static final int PICK_IMG = 100;
 
-    @BindView(R.id.cvExplorePalettes)
-    CardView cvExplorePalette;
-    @BindView(R.id.cvPickWithCam)
-    CardView cvPickWithCam;
+    @Inject
+    LinearLayoutManager linearLayoutManager;
+    @Inject
+    PalettesAdapter palettesAdapter;
 
-    File img = null;
+    @BindView(R.id.rvPalettes)
+    RecyclerView rvPalettes;
+    @BindView(R.id.swipeRefreshView)
+    SwipeRefreshLayout swipeRefreshView;
 
-    public static HomeFragment newInstance(int instance) {
+    public static PalettesFragment newInstance(int instance) {
         Bundle args = new Bundle();
         args.putInt(BaseFragment.ARGS_INSTANCE, instance);
-        HomeFragment fragment = new HomeFragment();
+        PalettesFragment fragment = new PalettesFragment();
         fragment.setArguments(args);
         return fragment;
     }
 
     public void refreshData() {
-
+        if (swipeRefreshView != null) {
+            swipeRefreshView.setRefreshing(true);
+            mViewModel.getPalettes();
+        }
 
     }
 
@@ -57,11 +58,12 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mViewModel.setNavigator(this);
+        palettesAdapter.setCallback(this);
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_palettes, container, false);
         ButterKnife.bind(this, view);
 
         setUp();
@@ -70,45 +72,33 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
     }
 
     private void setUp() {
-
         subscribeViewModel();
 
-        cvExplorePalette.setOnClickListener(v -> ((MainActivity) requireActivity()).navigateToPalettes());
+        rvPalettes.setLayoutManager(linearLayoutManager);
+        rvPalettes.setAdapter(palettesAdapter);
 
-        cvPickWithCam.setOnClickListener(v -> {
-            ImagePicker.Companion.with(this)
-                    .crop()
-                    .compress(1024)
-                    .maxResultSize(720, 720).start(PICK_IMG);
+        swipeRefreshView.setOnRefreshListener(() -> {
+            swipeRefreshView.setRefreshing(true);
+            mViewModel.getPalettes();
         });
 
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == Activity.RESULT_OK) {
-
-            if (requestCode == PICK_IMG) {
-                img = ImagePicker.Companion.getFile(data);
-
-//                startActivity(ImgPaletteActivity.newIntent(requireActivity()).putExtra("img",img));
-
-
-            }
-
-        }
+        swipeRefreshView.setRefreshing(true);
+        mViewModel.getPalettes();
     }
 
     @Override
     public void handleError(Throwable throwable) {
         hideLoading();
+        if (swipeRefreshView != null)
+            swipeRefreshView.setRefreshing(false);
         ErrorHandlingUtils.handleErrors(throwable);
     }
 
     @Override
     public void showMyApiMessage(String m) {
         hideLoading();
+        if (swipeRefreshView != null)
+            swipeRefreshView.setRefreshing(false);
         showErrorMessage(m);
     }
 
@@ -119,6 +109,13 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
 
     private void subscribeViewModel() {
 
+        mViewModel.getPalettesLiveData().observe(requireActivity(), response -> {
+            hideLoading();
+            swipeRefreshView.setRefreshing(false);
+            palettesAdapter.addItems(response.getSchemes());
+            rvPalettes.scheduleLayoutAnimation();
+        });
+
     }
 
     @Override
@@ -127,5 +124,4 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
         startActivity(PaletteDetailsActivity.newIntent(getActivity()).putExtra("palette", paletteModel));
 
     }
-
 }

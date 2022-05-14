@@ -8,7 +8,8 @@ import com.fci.colors_app.ViewModelProviderFactory;
 import com.fci.colors_app.data.DataManager;
 import com.fci.colors_app.ui.base.BaseFragment;
 import com.fci.colors_app.ui.home.HomeViewModel;
-import com.fci.colors_app.ui.home.PalettesAdapter;
+import com.fci.colors_app.ui.palettes.PalettesAdapter;
+import com.fci.colors_app.ui.palettes.PalettesViewModel;
 import com.fci.colors_app.ui.settings.SettingsViewModel;
 import com.fci.colors_app.utils.rx.SchedulerProvider;
 
@@ -48,6 +49,13 @@ public class FragmentModule {
         Supplier<SettingsViewModel> supplier = () -> new SettingsViewModel(dataManager, schedulerProvider);
         ViewModelProviderFactory<SettingsViewModel> factory = new ViewModelProviderFactory<>(SettingsViewModel.class, supplier);
         return new ViewModelProvider(fragment, factory).get(SettingsViewModel.class);
+    }
+
+    @Provides
+    PalettesViewModel providePalettesViewModel(DataManager dataManager, SchedulerProvider schedulerProvider) {
+        Supplier<PalettesViewModel> supplier = () -> new PalettesViewModel(dataManager, schedulerProvider);
+        ViewModelProviderFactory<PalettesViewModel> factory = new ViewModelProviderFactory<>(PalettesViewModel.class, supplier);
+        return new ViewModelProvider(fragment, factory).get(PalettesViewModel.class);
     }
 
 }
