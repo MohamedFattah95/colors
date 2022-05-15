@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginHorizontal="@dimen/_8sdp"
-    android:layout_marginVertical="@dimen/_4sdp"
+    android:layout_marginHorizontal="@dimen/_12sdp"
+    android:layout_marginVertical="@dimen/_8sdp"
     app:cardCornerRadius="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_48sdp"
+        android:layout_height="@dimen/_64sdp"
         android:orientation="horizontal">
 
         <ImageView

@@ -204,6 +204,5 @@ public class MainActivity extends BaseActivity<MainViewModel> implements MainNav
     public void navigateToPalettes() {
         fragNavController.switchTab(1);
         toolbarTitle.setText(R.string.palettes_menu);
-        ((PalettesFragment) navigation_fragments.get(1)).refreshData();
     }
 }

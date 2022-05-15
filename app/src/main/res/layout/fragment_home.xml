@@ -20,8 +20,8 @@
                 android:id="@+id/cvExplorePalettes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="@dimen/_4sdp">
 
@@ -37,8 +37,8 @@
                 android:id="@+id/cvPickWithCam"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_8sdp"
-                android:layout_marginVertical="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="@dimen/_4sdp">
 
@@ -47,6 +47,23 @@
                     android:layout_height="match_parent"
                     android:adjustViewBounds="true"
                     android:src="@drawable/color_camera" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvVR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginVertical="@dimen/_12sdp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/vr" />
 
             </androidx.cardview.widget.CardView>
 

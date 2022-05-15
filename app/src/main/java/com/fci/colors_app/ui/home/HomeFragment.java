@@ -16,6 +16,7 @@ import com.fci.colors_app.R;
 import com.fci.colors_app.data.models.PaletteModel;
 import com.fci.colors_app.di.component.FragmentComponent;
 import com.fci.colors_app.ui.base.BaseFragment;
+import com.fci.colors_app.ui.img_palette.ImgPaletteActivity;
 import com.fci.colors_app.ui.main.MainActivity;
 import com.fci.colors_app.ui.palette_details.PaletteDetailsActivity;
 import com.fci.colors_app.ui.palettes.PalettesAdapter;
@@ -92,7 +93,7 @@ public class HomeFragment extends BaseFragment<HomeViewModel> implements HomeNav
             if (requestCode == PICK_IMG) {
                 img = ImagePicker.Companion.getFile(data);
 
-//                startActivity(ImgPaletteActivity.newIntent(requireActivity()).putExtra("img",img));
+                startActivity(ImgPaletteActivity.newIntent(requireActivity()).putExtra("img", img));
 
 
             }
